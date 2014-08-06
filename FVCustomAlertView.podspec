@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "FVCustomAlertView"
-  s.version      = "0.0.1"
+  s.version      = "0.1"
   s.summary      = "An iOS custom alert view."
   s.description  = <<-DESC
                     FVCustomAlertView can display a custom alert, meant to replace the UIAlertView.
