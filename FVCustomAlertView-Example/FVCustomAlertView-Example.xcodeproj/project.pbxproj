@@ -1,0 +1,351 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8A2741D87134452AAC5B7CE1 /* libPods-FVCustomAlertView-Example.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 258401540CF94FF8B6D76800 /* libPods-FVCustomAlertView-Example.a */; };
+		D228BD901992D1E6004BB7D8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D228BD8F1992D1E6004BB7D8 /* Foundation.framework */; };
+		D228BD941992D1E6004BB7D8 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D228BD931992D1E6004BB7D8 /* UIKit.framework */; };
+		D228BD9C1992D1E6004BB7D8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D228BD9B1992D1E6004BB7D8 /* main.m */; };
+		D228BDA01992D1E6004BB7D8 /* FVAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D228BD9F1992D1E6004BB7D8 /* FVAppDelegate.m */; };
+		D228BDA31992D1E6004BB7D8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D228BDA11992D1E6004BB7D8 /* Main.storyboard */; };
+		D228BDA61992D1E6004BB7D8 /* FVViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D228BDA51992D1E6004BB7D8 /* FVViewController.m */; };
+		D228BDC51992D2E4004BB7D8 /* DemoImages.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D228BDC41992D2E4004BB7D8 /* DemoImages.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		258401540CF94FF8B6D76800 /* libPods-FVCustomAlertView-Example.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FVCustomAlertView-Example.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B8936CF3BABF4F9ABEAC8A1E /* Pods-FVCustomAlertView-Example.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FVCustomAlertView-Example.xcconfig"; path = "Pods/Pods-FVCustomAlertView-Example.xcconfig"; sourceTree = "<group>"; };
+		D228BD8C1992D1E6004BB7D8 /* FVCustomAlertView-Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "FVCustomAlertView-Example.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D228BD8F1992D1E6004BB7D8 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		D228BD911992D1E6004BB7D8 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		D228BD931992D1E6004BB7D8 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		D228BD971992D1E6004BB7D8 /* FVCustomAlertView-Example-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "FVCustomAlertView-Example-Info.plist"; sourceTree = "<group>"; };
+		D228BD9B1992D1E6004BB7D8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		D228BD9D1992D1E6004BB7D8 /* FVCustomAlertView-Example-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FVCustomAlertView-Example-Prefix.pch"; sourceTree = "<group>"; };
+		D228BD9E1992D1E6004BB7D8 /* FVAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FVAppDelegate.h; sourceTree = "<group>"; };
+		D228BD9F1992D1E6004BB7D8 /* FVAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FVAppDelegate.m; sourceTree = "<group>"; };
+		D228BDA21992D1E6004BB7D8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D228BDA41992D1E6004BB7D8 /* FVViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FVViewController.h; sourceTree = "<group>"; };
+		D228BDA51992D1E6004BB7D8 /* FVViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FVViewController.m; sourceTree = "<group>"; };
+		D228BDAE1992D1E6004BB7D8 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		D228BDC41992D2E4004BB7D8 /* DemoImages.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = DemoImages.xcassets; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D228BD891992D1E6004BB7D8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D228BD941992D1E6004BB7D8 /* UIKit.framework in Frameworks */,
+				D228BD901992D1E6004BB7D8 /* Foundation.framework in Frameworks */,
+				8A2741D87134452AAC5B7CE1 /* libPods-FVCustomAlertView-Example.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D228BD831992D1E6004BB7D8 = {
+			isa = PBXGroup;
+			children = (
+				D228BD951992D1E6004BB7D8 /* FVCustomAlertView-Example */,
+				D228BD8E1992D1E6004BB7D8 /* Frameworks */,
+				D228BD8D1992D1E6004BB7D8 /* Products */,
+				B8936CF3BABF4F9ABEAC8A1E /* Pods-FVCustomAlertView-Example.xcconfig */,
+			);
+			sourceTree = "<group>";
+		};
+		D228BD8D1992D1E6004BB7D8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D228BD8C1992D1E6004BB7D8 /* FVCustomAlertView-Example.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D228BD8E1992D1E6004BB7D8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D228BD8F1992D1E6004BB7D8 /* Foundation.framework */,
+				D228BD911992D1E6004BB7D8 /* CoreGraphics.framework */,
+				D228BD931992D1E6004BB7D8 /* UIKit.framework */,
+				D228BDAE1992D1E6004BB7D8 /* XCTest.framework */,
+				258401540CF94FF8B6D76800 /* libPods-FVCustomAlertView-Example.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D228BD951992D1E6004BB7D8 /* FVCustomAlertView-Example */ = {
+			isa = PBXGroup;
+			children = (
+				D228BD9E1992D1E6004BB7D8 /* FVAppDelegate.h */,
+				D228BD9F1992D1E6004BB7D8 /* FVAppDelegate.m */,
+				D228BDA11992D1E6004BB7D8 /* Main.storyboard */,
+				D228BDA41992D1E6004BB7D8 /* FVViewController.h */,
+				D228BDA51992D1E6004BB7D8 /* FVViewController.m */,
+				D228BDC41992D2E4004BB7D8 /* DemoImages.xcassets */,
+				D228BD961992D1E6004BB7D8 /* Supporting Files */,
+			);
+			path = "FVCustomAlertView-Example";
+			sourceTree = "<group>";
+		};
+		D228BD961992D1E6004BB7D8 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D228BD971992D1E6004BB7D8 /* FVCustomAlertView-Example-Info.plist */,
+				D228BD9B1992D1E6004BB7D8 /* main.m */,
+				D228BD9D1992D1E6004BB7D8 /* FVCustomAlertView-Example-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D228BD8B1992D1E6004BB7D8 /* FVCustomAlertView-Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D228BDBE1992D1E7004BB7D8 /* Build configuration list for PBXNativeTarget "FVCustomAlertView-Example" */;
+			buildPhases = (
+				430A58411EDA484E9BB01E03 /* Check Pods Manifest.lock */,
+				D228BD881992D1E6004BB7D8 /* Sources */,
+				D228BD891992D1E6004BB7D8 /* Frameworks */,
+				D228BD8A1992D1E6004BB7D8 /* Resources */,
+				B5B0D2DB77034EEEA87FE84D /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "FVCustomAlertView-Example";
+			productName = "FVCustomAlertView-Example";
+			productReference = D228BD8C1992D1E6004BB7D8 /* FVCustomAlertView-Example.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D228BD841992D1E6004BB7D8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = FV;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "Francis Visoiu Mistrih";
+			};
+			buildConfigurationList = D228BD871992D1E6004BB7D8 /* Build configuration list for PBXProject "FVCustomAlertView-Example" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D228BD831992D1E6004BB7D8;
+			productRefGroup = D228BD8D1992D1E6004BB7D8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D228BD8B1992D1E6004BB7D8 /* FVCustomAlertView-Example */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D228BD8A1992D1E6004BB7D8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D228BDC51992D2E4004BB7D8 /* DemoImages.xcassets in Resources */,
+				D228BDA31992D1E6004BB7D8 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		430A58411EDA484E9BB01E03 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		B5B0D2DB77034EEEA87FE84D /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-FVCustomAlertView-Example-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D228BD881992D1E6004BB7D8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D228BDA01992D1E6004BB7D8 /* FVAppDelegate.m in Sources */,
+				D228BD9C1992D1E6004BB7D8 /* main.m in Sources */,
+				D228BDA61992D1E6004BB7D8 /* FVViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		D228BDA11992D1E6004BB7D8 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D228BDA21992D1E6004BB7D8 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D228BDBC1992D1E7004BB7D8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		D228BDBD1992D1E7004BB7D8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D228BDBF1992D1E7004BB7D8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B8936CF3BABF4F9ABEAC8A1E /* Pods-FVCustomAlertView-Example.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "FVCustomAlertView-Example/FVCustomAlertView-Example-Prefix.pch";
+				INFOPLIST_FILE = "FVCustomAlertView-Example/FVCustomAlertView-Example-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		D228BDC01992D1E7004BB7D8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B8936CF3BABF4F9ABEAC8A1E /* Pods-FVCustomAlertView-Example.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "FVCustomAlertView-Example/FVCustomAlertView-Example-Prefix.pch";
+				INFOPLIST_FILE = "FVCustomAlertView-Example/FVCustomAlertView-Example-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D228BD871992D1E6004BB7D8 /* Build configuration list for PBXProject "FVCustomAlertView-Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D228BDBC1992D1E7004BB7D8 /* Debug */,
+				D228BDBD1992D1E7004BB7D8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D228BDBE1992D1E7004BB7D8 /* Build configuration list for PBXNativeTarget "FVCustomAlertView-Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D228BDBF1992D1E7004BB7D8 /* Debug */,
+				D228BDC01992D1E7004BB7D8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D228BD841992D1E6004BB7D8 /* Project object */;
+}

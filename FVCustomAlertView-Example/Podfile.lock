@@ -1,0 +1,14 @@
+PODS:
+  - FVCustomAlertView (0.0.3)
+
+DEPENDENCIES:
+  - FVCustomAlertView (from `../`)
+
+EXTERNAL SOURCES:
+  FVCustomAlertView:
+    :path: ../
+
+SPEC CHECKSUMS:
+  FVCustomAlertView: 33fa51a78a8d874ddcb6fc95b175fd5dcfed717f
+
+COCOAPODS: 0.33.1
