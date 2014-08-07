@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		8A2741D87134452AAC5B7CE1 /* libPods-FVCustomAlertView-Example.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 258401540CF94FF8B6D76800 /* libPods-FVCustomAlertView-Example.a */; };
 		D228BD901992D1E6004BB7D8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D228BD8F1992D1E6004BB7D8 /* Foundation.framework */; };
 		D228BD941992D1E6004BB7D8 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D228BD931992D1E6004BB7D8 /* UIKit.framework */; };
 		D228BD9C1992D1E6004BB7D8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D228BD9B1992D1E6004BB7D8 /* main.m */; };
@@ -19,7 +18,6 @@
 
 /* Begin PBXFileReference section */
 		258401540CF94FF8B6D76800 /* libPods-FVCustomAlertView-Example.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FVCustomAlertView-Example.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		B8936CF3BABF4F9ABEAC8A1E /* Pods-FVCustomAlertView-Example.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FVCustomAlertView-Example.xcconfig"; path = "Pods/Pods-FVCustomAlertView-Example.xcconfig"; sourceTree = "<group>"; };
 		D228BD8C1992D1E6004BB7D8 /* FVCustomAlertView-Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "FVCustomAlertView-Example.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D228BD8F1992D1E6004BB7D8 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		D228BD911992D1E6004BB7D8 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -43,7 +41,6 @@
 			files = (
 				D228BD941992D1E6004BB7D8 /* UIKit.framework in Frameworks */,
 				D228BD901992D1E6004BB7D8 /* Foundation.framework in Frameworks */,
-				8A2741D87134452AAC5B7CE1 /* libPods-FVCustomAlertView-Example.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,7 +53,6 @@
 				D228BD951992D1E6004BB7D8 /* FVCustomAlertView-Example */,
 				D228BD8E1992D1E6004BB7D8 /* Frameworks */,
 				D228BD8D1992D1E6004BB7D8 /* Products */,
-				B8936CF3BABF4F9ABEAC8A1E /* Pods-FVCustomAlertView-Example.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
@@ -296,7 +292,6 @@
 		};
 		D228BDBF1992D1E7004BB7D8 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B8936CF3BABF4F9ABEAC8A1E /* Pods-FVCustomAlertView-Example.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -311,7 +306,6 @@
 		};
 		D228BDC01992D1E7004BB7D8 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B8936CF3BABF4F9ABEAC8A1E /* Pods-FVCustomAlertView-Example.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
