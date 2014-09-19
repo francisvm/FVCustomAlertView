@@ -47,6 +47,11 @@ static const CGFloat kOtherIconsSize = 30;
 
     //get window size and position
     CGRect windowRect = [[UIScreen mainScreen] bounds];
+    
+    // Fix bug, when the device is landscape the windows size is not correct
+    if (UIInterfaceOrientationIsLandscape([[UIApplication sharedApplication] statusBarOrientation])) {
+        windowRect.size = CGSizeMake(windowRect.size.height, windowRect.size.width);
+    }
 
     //create the final view with a special tag
     UIView *resultView = [[UIView alloc] initWithFrame:windowRect];
