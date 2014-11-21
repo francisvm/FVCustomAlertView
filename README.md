@@ -7,7 +7,7 @@
 
 Custom AlertView for iOS SDK.
 
-[![](http://francisvm.com/FVCustomAlertView/1_th.png)](http://francisvm.com/FVCustomAlertView/1.png)
+[![](http://epimeros.francisvm.com/FVCustomAlertView/1_th.png)](http://epimeros.francisvm.com/FVCustomAlertView/1.png)
 
 ## Usage
 
@@ -44,37 +44,37 @@ The default modes are : (make sure you try them in the example app)
 
 * Loading
 
-[![](http://francisvm.com/FVCustomAlertView/1_th.png)](http://francisvm.com/FVCustomAlertView/1.png)
+[![](http://epimeros.francisvm.com/FVCustomAlertView/1_th.png)](http://epimeros.francisvm.com/FVCustomAlertView/1.png)
 ```objective-c
 [FVCustomAlertView showDefaultLoadingAlertOnView:self.view withTitle:@"Loading..."];
 ```
 
 * Done
 
-[![](http://francisvm.com/FVCustomAlertView/2_th.png)](http://francisvm.com/FVCustomAlertView/2.png)
+[![](http://epimeros.francisvm.com/FVCustomAlertView/2_th.png)](http://epimeros.francisvm.com/FVCustomAlertView/2.png)
 ```objective-c
 [FVCustomAlertView showDefaultDoneAlertOnView:self.view withTitle:@"Done"];
 ```
 
 * Error
 
-[![](http://francisvm.com/FVCustomAlertView/3_th.png)](http://francisvm.com/FVCustomAlertView/3.png)
+[![](http://epimeros.francisvm.com/FVCustomAlertView/3_th.png)](http://epimeros.francisvm.com/FVCustomAlertView/3.png)
 ```objective-c
 [FVCustomAlertView showDefaultErrorAlertOnView:self.view withTitle:@"Error"];
 ```
 
 * Warning
 
-[![](http://francisvm.com/FVCustomAlertView/4_th.png)](http://francisvm.com/FVCustomAlertView/4.png)
+[![](http://epimeros.francisvm.com/FVCustomAlertView/4_th.png)](http://epimeros.francisvm.com/FVCustomAlertView/4.png)
 ```objective-c
 [FVCustomAlertView showDefaultWarningAlertOnView:self.view withTitle:@"Be careful"];
 ```
 
 * Custom
 
-[![](http://francisvm.com/FVCustomAlertView/5_th.png)](http://francisvm.com/FVCustomAlertView/5.png)
+[![](http://epimeros.francisvm.com/FVCustomAlertView/5_th.png)](http://epimeros.francisvm.com/FVCustomAlertView/5.png)
 
-[![](http://francisvm.com/FVCustomAlertView/6_th.png)](http://francisvm.com/FVCustomAlertView/6.png)
+[![](http://epimeros.francisvm.com/FVCustomAlertView/6_th.png)](http://epimeros.francisvm.com/FVCustomAlertView/6.png)
 ```objective-c
 UIView *sw = [[UISwitch alloc] init];
 [FVCustomAlertView showAlertOnView:self.view withTitle:@"Do you want to recieve notifications from us?"titleColor:[UIColor whiteColor] width:120 height:140 backgroundImage:nil backgroundColor:[UIColor blackColor] cornerRadius:20 shadowAlpha:0.2 alpha:0.8 contentView:sw type:FVAlertTypeCustom];
