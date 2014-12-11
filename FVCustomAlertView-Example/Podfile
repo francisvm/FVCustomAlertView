@@ -3,7 +3,7 @@
 
 target "FVCustomAlertView-Example" do
 
-pod 'FVCustomAlertView', :path => '../'
+pod 'FVCustomAlertView'
 
 end
 

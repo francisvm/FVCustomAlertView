@@ -51,6 +51,12 @@ typedef enum {
 
 @interface FVCustomAlertView : UIView
 
+/**
+ * Getter to the current FVCustomAlertView displayed
+ * If no alert view is displayed on the screen, the result will be nil.
+ * @return the current FVCustomAlertView
+ */
++ (UIView *)currentView;
 
 /**
  * Creates a new view and adds it to the view. Use hideAlertFromView to hide it.

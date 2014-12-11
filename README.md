@@ -79,6 +79,12 @@ The default modes are : (make sure you try them in the example app)
 UIView *sw = [[UISwitch alloc] init];
 [FVCustomAlertView showAlertOnView:self.view withTitle:@"Do you want to recieve notifications from us?"titleColor:[UIColor whiteColor] width:120 height:140 backgroundImage:nil backgroundColor:[UIColor blackColor] cornerRadius:20 shadowAlpha:0.2 alpha:0.8 contentView:sw type:FVAlertTypeCustom];
 ```
+### Current view
+The current view can be retrieved using the method
+```objective-c
++ (UIView *)currentView;
+```
+(v0.2)
 
 ## Author
 

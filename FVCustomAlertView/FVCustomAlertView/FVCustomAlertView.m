@@ -24,7 +24,14 @@ static const CGFloat kOtherIconsSize = 30;
 
 @end
 
+static UIView *currentView = nil;
+
 @implementation FVCustomAlertView
+
++ (UIView *)currentView
+{
+    return currentView;
+}
 
 + (void)showAlertOnView:(UIView *)view
               withTitle:(NSString *)title
@@ -109,6 +116,7 @@ static const CGFloat kOtherIconsSize = 30;
     [resultView addGestureRecognizer:tapGesture];
 
     [view addSubview:resultView];
+    currentView = view;
 }
 
 + (void)showDefaultLoadingAlertOnView:(UIView *)view withTitle:(NSString *)title {
@@ -237,6 +245,7 @@ static const CGFloat kOtherIconsSize = 30;
     } else {
         [[view viewWithTag:kFinalViewTag] removeFromSuperview];
     }
+    currentView = nil;
 }
 
 + (void)hideAlertByTap:(UITapGestureRecognizer *)sender {
@@ -244,6 +253,7 @@ static const CGFloat kOtherIconsSize = 30;
     [self fadeOutView:sender.view
            completion:^(BOOL finished) {
                [[sender.view viewWithTag:kFinalViewTag] removeFromSuperview];
+               currentView = nil;
            }];
 }
 
