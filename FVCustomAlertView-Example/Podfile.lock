@@ -1,0 +1,10 @@
+PODS:
+  - FVCustomAlertView (0.1)
+
+DEPENDENCIES:
+  - FVCustomAlertView
+
+SPEC CHECKSUMS:
+  FVCustomAlertView: d49882c23fdfeacd3a1132f2d01cd9aec3d4c87e
+
+COCOAPODS: 0.33.1
