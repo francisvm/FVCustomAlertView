@@ -90,6 +90,7 @@ The current view can be retrieved using the method
 
 Francis Visoiu Mistrih
 http://francisvm.com/
+
 thegameg1@yahoo.com
 
 ## License
