@@ -88,7 +88,9 @@ The current view can be retrieved using the method
 
 ## Author
 
-Francis Visoiu Mistrih, thegameg1@yahoo.com
+Francis Visoiu Mistrih
+http://francisvm.com/
+thegameg1@yahoo.com
 
 ## License
 
