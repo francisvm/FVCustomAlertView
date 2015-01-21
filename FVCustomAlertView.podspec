@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "FVCustomAlertView"
-  s.version      = "0.2"
+  s.version      = "0.3"
   s.summary      = "An iOS custom alert view."
   s.description  = <<-DESC
                     FVCustomAlertView can display a custom alert, meant to replace the UIAlertView.
@@ -11,7 +11,7 @@ Pod::Spec.new do |s|
   s.source           = { :git => "https://github.com/thegameg/FVCustomAlertView.git", :tag => s.version.to_s }
   s.social_media_url = 'https://twitter.com/thegameg'
 
-  s.platform     = :ios, '7.0'
+  s.platform     = :ios, '8.0'
   s.requires_arc = true
   s.frameworks = "Foundation", "UIKit"
 
