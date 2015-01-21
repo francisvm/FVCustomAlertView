@@ -7,8 +7,8 @@
 
 Custom AlertView for iOS SDK.
 
-[![](https://raw.githubusercontent.com/thegameg/FVCustomAlertView/master/Screenshots/fva0_th.png)](https://raw.githubusercontent
-.com/thegameg/FVCustomAlertView/master/Screenshots/fva0.png)
+[![](https://raw.githubusercontent.com/thegameg/FVCustomAlertView/master/Screenshots/fva0_th.png)](https://raw.githubusercontent.com/thegameg/FVCustomAlertView/master/Screenshots/fva0.png)
+
 
 [![](https://raw.githubusercontent.com/thegameg/FVCustomAlertView/master/Screenshots/fva1_th.png)](https://raw.githubusercontent.com/thegameg/FVCustomAlertView/master/Screenshots/fva1.png)
 
