@@ -15,8 +15,8 @@ To run the example project, clone the repo, and run `pod install` from the FVCus
 
 ## Requirements
 
-* iOS7+ project
-* ACR project
+* iOS8+ project
+* ARC project
 
 ## How to install FVCustomAlertView
 
@@ -46,28 +46,28 @@ The default modes are : (make sure you try them in the example app)
 
 [![](http://epimeros.francisvm.com/FVCustomAlertView/1_th.png)](http://epimeros.francisvm.com/FVCustomAlertView/1.png)
 ```objective-c
-[FVCustomAlertView showDefaultLoadingAlertOnView:self.view withTitle:@"Loading..."];
+[FVCustomAlertView showDefaultLoadingAlertOnView:self.view withTitle:@"Loading..." withBlur:YES];
 ```
 
 * Done
 
 [![](http://epimeros.francisvm.com/FVCustomAlertView/2_th.png)](http://epimeros.francisvm.com/FVCustomAlertView/2.png)
 ```objective-c
-[FVCustomAlertView showDefaultDoneAlertOnView:self.view withTitle:@"Done"];
+[FVCustomAlertView showDefaultDoneAlertOnView:self.view withTitle:@"Done" withBlur:YES];
 ```
 
 * Error
 
 [![](http://epimeros.francisvm.com/FVCustomAlertView/3_th.png)](http://epimeros.francisvm.com/FVCustomAlertView/3.png)
 ```objective-c
-[FVCustomAlertView showDefaultErrorAlertOnView:self.view withTitle:@"Error"];
+[FVCustomAlertView showDefaultErrorAlertOnView:self.view withTitle:@"Error" withBlur:YES];
 ```
 
 * Warning
 
 [![](http://epimeros.francisvm.com/FVCustomAlertView/4_th.png)](http://epimeros.francisvm.com/FVCustomAlertView/4.png)
 ```objective-c
-[FVCustomAlertView showDefaultWarningAlertOnView:self.view withTitle:@"Be careful"];
+[FVCustomAlertView showDefaultWarningAlertOnView:self.view withTitle:@"Be careful" withBlur:YES];
 ```
 
 * Custom
@@ -77,14 +77,18 @@ The default modes are : (make sure you try them in the example app)
 [![](http://epimeros.francisvm.com/FVCustomAlertView/6_th.png)](http://epimeros.francisvm.com/FVCustomAlertView/6.png)
 ```objective-c
 UIView *sw = [[UISwitch alloc] init];
-[FVCustomAlertView showAlertOnView:self.view withTitle:@"Do you want to recieve notifications from us?"titleColor:[UIColor whiteColor] width:120 height:140 backgroundImage:nil backgroundColor:[UIColor blackColor] cornerRadius:20 shadowAlpha:0.2 alpha:0.8 contentView:sw type:FVAlertTypeCustom];
+[FVCustomAlertView showAlertOnView:self.view withTitle:@"Do you want to recieve notifications from us?"titleColor:[UIColor whiteColor] width:120 height:140 blur:YES backgroundImage:nil backgroundColor:[UIColor blackColor] cornerRadius:20 shadowAlpha:0.2 alpha:0.8 contentView:sw type:FVAlertTypeCustom];
 ```
-### Current view
+
+#### v.0.2
+###### Current view
 The current view can be retrieved using the method
 ```objective-c
 + (UIView *)currentView;
 ```
-(v0.2)
+
+#### v.0.3
+Added blur option, using `UIBlurEffect`. *iOS8+ only*.
 
 ## Author
 
