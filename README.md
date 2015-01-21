@@ -92,7 +92,10 @@ Added blur option, using `UIBlurEffect`. *iOS8+ only*.
 
 ## Author
 
-Francis Visoiu Mistrih, thegameg1@yahoo.com
+Francis Visoiu Mistrih
+http://francisvm.com/
+
+thegameg1@yahoo.com
 
 ## License
 
