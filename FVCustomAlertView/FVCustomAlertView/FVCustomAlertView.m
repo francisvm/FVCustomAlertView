@@ -38,6 +38,7 @@ static UIView *currentView = nil;
              titleColor:(UIColor *)titleColor
                   width:(CGFloat)width
                  height:(CGFloat)height
+                   blur:(BOOL)blur
         backgroundImage:(UIImage *)backgroundImage
         backgroundColor:(UIColor *)backgroundColor
            cornerRadius:(CGFloat)cornerRadius
@@ -58,6 +59,12 @@ static UIView *currentView = nil;
     //create the final view with a special tag
     UIView *resultView = [[UIView alloc] initWithFrame:windowRect];
     resultView.tag = kFinalViewTag; //set tag to retrieve later
+
+    UIVisualEffect *blurEffect = [UIBlurEffect effectWithStyle:UIBlurEffectStyleDark];
+
+    UIVisualEffectView *visualEffectView = [[UIVisualEffectView alloc] initWithEffect:blurEffect];
+    visualEffectView.frame = windowRect;
+    [resultView addSubview:visualEffectView];
 
     //create shadow view by adding a black background with custom opacity
     UIView *shadowView = [[UIView alloc] initWithFrame:windowRect];
@@ -119,12 +126,13 @@ static UIView *currentView = nil;
     currentView = view;
 }
 
-+ (void)showDefaultLoadingAlertOnView:(UIView *)view withTitle:(NSString *)title {
++ (void)showDefaultLoadingAlertOnView:(UIView *)view withTitle:(NSString *)title withBlur:(BOOL)blur {
     [self showAlertOnView:view
                 withTitle:title
                titleColor:[UIColor whiteColor]
                     width:100.0
                    height:100.0
+                     blur:blur
           backgroundImage:nil
           backgroundColor:[UIColor blackColor]
              cornerRadius:10.0
@@ -134,12 +142,13 @@ static UIView *currentView = nil;
                      type:FVAlertTypeLoading];
 }
 
-+ (void)showDefaultDoneAlertOnView:(UIView *)view withTitle:(NSString *)title {
++ (void)showDefaultDoneAlertOnView:(UIView *)view withTitle:(NSString *)title withBlur:(BOOL)blur {
     [self showAlertOnView:view
                 withTitle:title
                titleColor:[UIColor whiteColor]
                     width:100.0
                    height:100.0
+                     blur:blur
           backgroundImage:nil
           backgroundColor:[UIColor blackColor]
              cornerRadius:10.0
@@ -149,12 +158,13 @@ static UIView *currentView = nil;
                      type:FVAlertTypeDone];
 }
 
-+ (void)showDefaultErrorAlertOnView:(UIView *)view withTitle:(NSString *)title {
++ (void)showDefaultErrorAlertOnView:(UIView *)view withTitle:(NSString *)title withBlur:(BOOL)blur {
     [self showAlertOnView:view
                 withTitle:title
                titleColor:[UIColor whiteColor]
                     width:100.0
                    height:100.0
+                     blur:blur
           backgroundImage:nil
           backgroundColor:[UIColor blackColor]
              cornerRadius:10.0
@@ -164,12 +174,13 @@ static UIView *currentView = nil;
                      type:FVAlertTypeError];
 }
 
-+ (void)showDefaultWarningAlertOnView:(UIView *)view withTitle:(NSString *)title {
++ (void)showDefaultWarningAlertOnView:(UIView *)view withTitle:(NSString *)title withBlur:(BOOL)blur {
     [self showAlertOnView:view
                 withTitle:title
                titleColor:[UIColor whiteColor]
                     width:100.0
                    height:100.0
+                     blur:blur
           backgroundImage:nil
           backgroundColor:[UIColor blackColor]
              cornerRadius:10.0

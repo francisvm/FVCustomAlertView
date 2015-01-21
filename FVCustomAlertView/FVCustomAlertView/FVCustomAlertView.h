@@ -68,6 +68,7 @@ typedef enum {
  * @param width The width of the view
  * @param height The height of the view
  * @param backgroundImage If set, will set the background as a tiled image. Background color will be unavalible.
+ * @param blur If set, tbe background will have a blur effect
  * @param backgroundColor Color of the background. Used if the image is not set.
  * @param cornerRadius The radius of the rounded corners
  * @param shadowAlpha The background shadow opacity
@@ -80,6 +81,7 @@ typedef enum {
              titleColor:(UIColor *)titleColor
                   width:(CGFloat)width
                  height:(CGFloat)height
+                   blur:(BOOL)blur
         backgroundImage:(UIImage *)backgroundImage
         backgroundColor:(UIColor *)backgroundColor
            cornerRadius:(CGFloat)cornerRadius
@@ -93,32 +95,36 @@ typedef enum {
  * with the activity indicator from pictures 1.png 2.png...20.png
  * @param view The view that the alertView will be added to
  * @param title The title shown on the top of the alert view
+ * @param blur If set, tbe background will have a blur effect
  */
-+ (void)showDefaultLoadingAlertOnView:(UIView *)view withTitle:(NSString *)title;
++ (void)showDefaultLoadingAlertOnView:(UIView *)view withTitle:(NSString *)title withBlur:(BOOL)blur;
 
 /**
  * Creates a default done view
  * with a checkmark and a title
  * @param view The view that the alertView will be added to
  * @param title The title shown on the top of the alert view
+ * @param blur If set, tbe background will have a blur effect
  */
-+ (void)showDefaultDoneAlertOnView:(UIView *)view withTitle:(NSString *)title;
++ (void)showDefaultDoneAlertOnView:(UIView *)view withTitle:(NSString *)title withBlur:(BOOL)blur;
 
 /**
  * Creates a default done view
  * with a cross (X) and a title
  * @param view The view that the alertView will be added to
  * @param title The title shown on the top of the alert view
+ * @param blur If set, tbe background will have a blur effect
  */
-+ (void)showDefaultErrorAlertOnView:(UIView *)view withTitle:(NSString *)title;
++ (void)showDefaultErrorAlertOnView:(UIView *)view withTitle:(NSString *)title withBlur:(BOOL)blur;
 
 /**
  * Creates a default done view
  * with an exclamation point (!) and a title
  * @param view The view that the alertView will be added to
  * @param title The title shown on the top of the alert view
+ * @param blur If set, tbe background will have a blur effect
  */
-+ (void)showDefaultWarningAlertOnView:(UIView *)view withTitle:(NSString *)title;
++ (void)showDefaultWarningAlertOnView:(UIView *)view withTitle:(NSString *)title withBlur:(BOOL)blur;
 
 /**
  * Hides the active view on the specified view.

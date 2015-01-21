@@ -16,25 +16,25 @@
 @implementation FVViewController
 
 - (IBAction)loadingButtonPressed:(id)sender {
-    [FVCustomAlertView showDefaultLoadingAlertOnView:self.view withTitle:@"Loading..."];
+    [FVCustomAlertView showDefaultLoadingAlertOnView:self.view withTitle:@"Loading..." withBlur:YES];
 }
 
 - (IBAction)doneButtonPressed:(id)sender {
-    [FVCustomAlertView showDefaultDoneAlertOnView:self.view withTitle:@"Done"];
+    [FVCustomAlertView showDefaultDoneAlertOnView:self.view withTitle:@"Done" withBlur:YES];
 }
 
 - (IBAction)errorButtonPressed:(id)sender {
-    [FVCustomAlertView showDefaultErrorAlertOnView:self.view withTitle:@"Error"];
+    [FVCustomAlertView showDefaultErrorAlertOnView:self.view withTitle:@"Error" withBlur:YES];
 }
 
 - (IBAction)warningButtonPressed:(id)sender {
-    [FVCustomAlertView showDefaultWarningAlertOnView:self.view withTitle:@"Be careful"];
+    [FVCustomAlertView showDefaultWarningAlertOnView:self.view withTitle:@"Be careful" withBlur:YES];
 }
 
 - (IBAction)customButtonPressed:(id)sender {
     UISwitch *sw = [[UISwitch alloc] init];
     sw.on = YES;
-    [FVCustomAlertView showAlertOnView:self.view withTitle:@"Do you want to recieve notifications from us?"titleColor:[UIColor whiteColor] width:120 height:140 backgroundImage:nil backgroundColor:[UIColor blackColor] cornerRadius:20 shadowAlpha:0.2 alpha:0.8 contentView:sw type:FVAlertTypeCustom];
+    [FVCustomAlertView showAlertOnView:self.view withTitle:@"Do you want to recieve notifications from us?" titleColor:[UIColor whiteColor] width:120 height:140 blur:YES backgroundImage:nil backgroundColor:[UIColor blackColor] cornerRadius:20 shadowAlpha:0.2 alpha:0.8 contentView:sw type:FVAlertTypeCustom];
 }
 
 - (IBAction)bgCustomButtonPressed:(id)sender {
@@ -58,7 +58,7 @@
                                    + control.frame.size.height + 5, closeButton.frame.size.width, closeButton.frame.size.height);
 
 
-    [FVCustomAlertView showAlertOnView:self.view withTitle:@"Choose!" titleColor:[UIColor whiteColor] width:150 height:110 backgroundImage:[UIImage imageNamed:@"bg"] backgroundColor:nil cornerRadius:10.0 shadowAlpha:0.4 alpha:0.9 contentView:contentView type:FVAlertTypeCustom];
+    [FVCustomAlertView showAlertOnView:self.view withTitle:@"Choose!" titleColor:[UIColor whiteColor] width:150 height:110 blur:YES backgroundImage:[UIImage imageNamed:@"bg"] backgroundColor:nil cornerRadius:10.0 shadowAlpha:0.4 alpha:0.9 contentView:contentView type:FVAlertTypeCustom];
 }
 
 - (void)close:(id)sender {
