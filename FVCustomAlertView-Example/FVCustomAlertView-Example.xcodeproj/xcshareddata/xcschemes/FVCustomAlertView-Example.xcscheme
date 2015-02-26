@@ -28,16 +28,6 @@
       shouldUseLaunchSchemeArgsEnv = "YES"
       buildConfiguration = "Debug">
       <Testables>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "D228BDAC1992D1E6004BB7D8"
-               BuildableName = "FVCustomAlertView-ExampleTests.xctest"
-               BlueprintName = "FVCustomAlertView-ExampleTests"
-               ReferencedContainer = "container:FVCustomAlertView-Example.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference
