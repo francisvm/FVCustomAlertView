@@ -12,6 +12,7 @@ static const NSInteger kInsetValue = 6;
 static const NSUInteger kFinalViewTag = 1337;
 static const NSUInteger kAlertViewTag = 1338;
 static const CGFloat kFadeOutDuration = 0.5f;
+static const CGFloat kFadeInDuration = 0.2f;
 static const CGFloat kActivityIndicatorSize = 50;
 static const CGFloat kOtherIconsSize = 30;
 
@@ -46,6 +47,7 @@ static UIView *currentView = nil;
                   alpha:(CGFloat)alpha
             contentView:(UIView *)contentView
                    type:(FVAlertType)type
+               allowTap:(BOOL)tap
 {
     if ([view viewWithTag:kFinalViewTag]) {
         //don't allow 2 alerts on the same view
@@ -59,14 +61,13 @@ static UIView *currentView = nil;
     //create the final view with a special tag
     UIView *resultView = [[UIView alloc] initWithFrame:windowRect];
     resultView.tag = kFinalViewTag; //set tag to retrieve later
+    resultView.alpha = 0.0f;
 
-    if (blur) {
-        UIVisualEffect *blurEffect = [UIBlurEffect effectWithStyle:UIBlurEffectStyleDark];
+    UIVisualEffect *blurEffect = [UIBlurEffect effectWithStyle:UIBlurEffectStyleDark];
 
-        UIVisualEffectView *visualEffectView = [[UIVisualEffectView alloc] initWithEffect:blurEffect];
-        visualEffectView.frame = windowRect;
-        [resultView addSubview:visualEffectView];
-    }
+    UIVisualEffectView *visualEffectView = [[UIVisualEffectView alloc] initWithEffect:blurEffect];
+    visualEffectView.frame = windowRect;
+    [resultView addSubview:visualEffectView];
 
     //create shadow view by adding a black background with custom opacity
     UIView *shadowView = [[UIView alloc] initWithFrame:windowRect];
@@ -118,17 +119,20 @@ static UIView *currentView = nil;
 
     [resultView addSubview:alertView];
 
-    //tap the alert view to hide and remove it from the superview
-    UITapGestureRecognizer *tapGesture = [[UITapGestureRecognizer alloc] initWithTarget:[FVCustomAlertView class] action:@selector(hideAlertByTap:)];
-    tapGesture.numberOfTapsRequired = 1;
-    tapGesture.numberOfTouchesRequired = 1;
-    [resultView addGestureRecognizer:tapGesture];
+    if (tap) {
+        //tap the alert view to hide and remove it from the superview
+        UITapGestureRecognizer *tapGesture = [[UITapGestureRecognizer alloc] initWithTarget:[FVCustomAlertView class] action:@selector(hideAlertByTap:)];
+        tapGesture.numberOfTapsRequired = 1;
+        tapGesture.numberOfTouchesRequired = 1;
+        [resultView addGestureRecognizer:tapGesture];
+    }
 
     [view addSubview:resultView];
+    [self fadeInView:resultView completion:nil];
     currentView = view;
 }
 
-+ (void)showDefaultLoadingAlertOnView:(UIView *)view withTitle:(NSString *)title withBlur:(BOOL)blur {
++ (void)showDefaultLoadingAlertOnView:(UIView *)view withTitle:(NSString *)title withBlur:(BOOL)blur allowTap:(BOOL)tap {
     [self showAlertOnView:view
                 withTitle:title
                titleColor:[UIColor whiteColor]
@@ -141,10 +145,11 @@ static UIView *currentView = nil;
               shadowAlpha:0.1
                     alpha:0.8
               contentView:nil
-                     type:FVAlertTypeLoading];
+                     type:FVAlertTypeLoading
+                 allowTap:tap];
 }
 
-+ (void)showDefaultDoneAlertOnView:(UIView *)view withTitle:(NSString *)title withBlur:(BOOL)blur {
++ (void)showDefaultDoneAlertOnView:(UIView *)view withTitle:(NSString *)title withBlur:(BOOL)blur allowTap:(BOOL)tap {
     [self showAlertOnView:view
                 withTitle:title
                titleColor:[UIColor whiteColor]
@@ -157,10 +162,11 @@ static UIView *currentView = nil;
               shadowAlpha:0.1
                     alpha:0.8
               contentView:nil
-                     type:FVAlertTypeDone];
+                     type:FVAlertTypeDone
+                 allowTap:tap];
 }
 
-+ (void)showDefaultErrorAlertOnView:(UIView *)view withTitle:(NSString *)title withBlur:(BOOL)blur {
++ (void)showDefaultErrorAlertOnView:(UIView *)view withTitle:(NSString *)title withBlur:(BOOL)blur allowTap:(BOOL)tap {
     [self showAlertOnView:view
                 withTitle:title
                titleColor:[UIColor whiteColor]
@@ -173,10 +179,11 @@ static UIView *currentView = nil;
               shadowAlpha:0.1
                     alpha:0.8
               contentView:nil
-                     type:FVAlertTypeError];
+                     type:FVAlertTypeError
+                 allowTap:tap];
 }
 
-+ (void)showDefaultWarningAlertOnView:(UIView *)view withTitle:(NSString *)title withBlur:(BOOL)blur {
++ (void)showDefaultWarningAlertOnView:(UIView *)view withTitle:(NSString *)title withBlur:(BOOL)blur allowTap:(BOOL)tap {
     [self showAlertOnView:view
                 withTitle:title
                titleColor:[UIColor whiteColor]
@@ -189,7 +196,8 @@ static UIView *currentView = nil;
               shadowAlpha:0.1
                     alpha:0.8
               contentView:nil
-                     type:FVAlertTypeWarning];
+                     type:FVAlertTypeWarning
+                 allowTap:tap];
 }
 
 + (NSArray *)setupCustomActivityIndicator {
@@ -238,6 +246,16 @@ static UIView *currentView = nil;
     }
 
     return content;
+}
+
++ (void)fadeInView:(UIView *)view completion:(void (^)(BOOL finished))completion {
+    [UIView animateWithDuration:kFadeInDuration
+                          delay:0.0
+                        options:UIViewAnimationOptionCurveEaseIn
+                     animations:^{
+                         [view setAlpha:1.0];
+                     }
+                     completion:completion];
 }
 
 + (void)fadeOutView:(UIView *)view completion:(void (^)(BOOL finished))completion {

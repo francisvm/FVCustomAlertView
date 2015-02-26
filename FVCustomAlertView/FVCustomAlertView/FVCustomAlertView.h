@@ -75,6 +75,7 @@ typedef enum {
  * @param alpha The opacity of the alert view
  * @param contentView The content of the view. Can be nil and choose a special type. Can be filled with a UIView or other derived classes.
  * @param type
+ * @param tap Allow the user to tap to dismiss
  */
 + (void)showAlertOnView:(UIView *)view
               withTitle:(NSString *)title
@@ -88,7 +89,8 @@ typedef enum {
             shadowAlpha:(CGFloat)shadowAlpha
                   alpha:(CGFloat)alpha
             contentView:(UIView *)contentView
-                   type:(FVAlertType)type;
+                   type:(FVAlertType)type
+               allowTap:(BOOL)tap;
 
 /**
  * Creates a default loading view
@@ -96,8 +98,9 @@ typedef enum {
  * @param view The view that the alertView will be added to
  * @param title The title shown on the top of the alert view
  * @param blur If set, tbe background will have a blur effect
+ * @param tap Allow the user to tap to dismiss
  */
-+ (void)showDefaultLoadingAlertOnView:(UIView *)view withTitle:(NSString *)title withBlur:(BOOL)blur;
++ (void)showDefaultLoadingAlertOnView:(UIView *)view withTitle:(NSString *)title withBlur:(BOOL)blur allowTap:(BOOL)tap;
 
 /**
  * Creates a default done view
@@ -105,8 +108,9 @@ typedef enum {
  * @param view The view that the alertView will be added to
  * @param title The title shown on the top of the alert view
  * @param blur If set, tbe background will have a blur effect
+ * @param tap Allow the user to tap to dismiss
  */
-+ (void)showDefaultDoneAlertOnView:(UIView *)view withTitle:(NSString *)title withBlur:(BOOL)blur;
++ (void)showDefaultDoneAlertOnView:(UIView *)view withTitle:(NSString *)title withBlur:(BOOL)blur allowTap:(BOOL)tap;
 
 /**
  * Creates a default done view
@@ -114,8 +118,9 @@ typedef enum {
  * @param view The view that the alertView will be added to
  * @param title The title shown on the top of the alert view
  * @param blur If set, tbe background will have a blur effect
+ * @param tap Allow the user to tap to dismiss
  */
-+ (void)showDefaultErrorAlertOnView:(UIView *)view withTitle:(NSString *)title withBlur:(BOOL)blur;
++ (void)showDefaultErrorAlertOnView:(UIView *)view withTitle:(NSString *)title withBlur:(BOOL)blur allowTap:(BOOL)tap;
 
 /**
  * Creates a default done view
@@ -123,8 +128,9 @@ typedef enum {
  * @param view The view that the alertView will be added to
  * @param title The title shown on the top of the alert view
  * @param blur If set, tbe background will have a blur effect
+ * @param tap Allow the user to tap to dismiss
  */
-+ (void)showDefaultWarningAlertOnView:(UIView *)view withTitle:(NSString *)title withBlur:(BOOL)blur;
++ (void)showDefaultWarningAlertOnView:(UIView *)view withTitle:(NSString *)title withBlur:(BOOL)blur allowTap:(BOOL)tap;
 
 /**
  * Hides the active view on the specified view.
