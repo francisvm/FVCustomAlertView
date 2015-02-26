@@ -91,7 +91,9 @@ The current view can be retrieved using the method
 ```
 
 #### v.0.3
-Added blur option, using `UIBlurEffect`. *iOS8+ only*.
+* Added blur option, using `UIBlurEffect`. *iOS8+ only*.
+* Add tap to dismiss parameter
+
 
 ## Author
 
