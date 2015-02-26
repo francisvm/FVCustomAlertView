@@ -1,0 +1,6 @@
+language: objective-c
+xcode_workspace: FVCustomAlertView-Example/FVCustomAlertView-Example.xcworkspace
+xcode_scheme: FVCustomAlertView-Example
+xcode_sdk: iphonesimulator8.1
+podfile: FVCustomAlertView-Example/Podfile
+env: CODE_SIGNING_REQUIRED=NO
