@@ -63,11 +63,13 @@ static UIView *currentView = nil;
     resultView.tag = kFinalViewTag; //set tag to retrieve later
     resultView.alpha = 0.0f;
 
-    UIVisualEffect *blurEffect = [UIBlurEffect effectWithStyle:UIBlurEffectStyleDark];
+    if (blur) {
+      UIVisualEffect *blurEffect = [UIBlurEffect effectWithStyle:UIBlurEffectStyleDark];
 
-    UIVisualEffectView *visualEffectView = [[UIVisualEffectView alloc] initWithEffect:blurEffect];
-    visualEffectView.frame = windowRect;
-    [resultView addSubview:visualEffectView];
+      UIVisualEffectView *visualEffectView = [[UIVisualEffectView alloc] initWithEffect:blurEffect];
+      visualEffectView.frame = windowRect;
+      [resultView addSubview:visualEffectView];
+    }
 
     //create shadow view by adding a black background with custom opacity
     UIView *shadowView = [[UIView alloc] initWithFrame:windowRect];

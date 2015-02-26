@@ -1,10 +1,10 @@
 PODS:
-  - FVCustomAlertView (0.1)
+  - FVCustomAlertView (0.3.2)
 
 DEPENDENCIES:
   - FVCustomAlertView
 
 SPEC CHECKSUMS:
-  FVCustomAlertView: d49882c23fdfeacd3a1132f2d01cd9aec3d4c87e
+  FVCustomAlertView: ffb60d17125bebcd9c55dd356387e8a4db9c7d39
 
-COCOAPODS: 0.33.1
+COCOAPODS: 0.36.0.beta.2
