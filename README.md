@@ -1,6 +1,5 @@
 # FVCustomAlertView
-
-[![CI Status](http://img.shields.io/travis/Francis Visoiu Mistrih/FVCustomAlertView.svg?style=flat)](https://travis-ci.org/Francis Visoiu Mistrih/FVCustomAlertView)
+[![CI Status](https://travis-ci.org/thegameg/FVCustomAlertView.svg?branch=master)](https://travis-ci.org/thegameg/FVCustomAlertView)
 [![Version](https://img.shields.io/cocoapods/v/FVCustomAlertView.svg?style=flat)](http://cocoadocs.org/docsets/FVCustomAlertView)
 [![License](https://img.shields.io/cocoapods/l/FVCustomAlertView.svg?style=flat)](http://cocoadocs.org/docsets/FVCustomAlertView)
 [![Platform](https://img.shields.io/cocoapods/p/FVCustomAlertView.svg?style=flat)](http://cocoadocs.org/docsets/FVCustomAlertView)
