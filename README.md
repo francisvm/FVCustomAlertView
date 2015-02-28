@@ -48,28 +48,28 @@ The default modes are : (make sure you try them in the example app)
 
 [![](https://raw.githubusercontent.com/thegameg/FVCustomAlertView/master/Screenshots/fva1_th.png)](https://raw.githubusercontent.com/thegameg/FVCustomAlertView/master/Screenshots/fva1.png)
 ```objective-c
-[FVCustomAlertView showDefaultLoadingAlertOnView:self.view withTitle:@"Loading..." withBlur:YES];
+[FVCustomAlertView showDefaultLoadingAlertOnView:self.view withTitle:@"Loading..." withBlur:YES allowTap:YES];
 ```
 
 * Done
 
 [![](https://raw.githubusercontent.com/thegameg/FVCustomAlertView/master/Screenshots/fva2_th.png)](https://raw.githubusercontent.com/thegameg/FVCustomAlertView/master/Screenshots/fva2.png)
 ```objective-c
-[FVCustomAlertView showDefaultDoneAlertOnView:self.view withTitle:@"Done" withBlur:YES];
+[FVCustomAlertView showDefaultDoneAlertOnView:self.view withTitle:@"Done" withBlur:YES allowTap:YES];
 ```
 
 * Error
 
 [![](https://raw.githubusercontent.com/thegameg/FVCustomAlertView/master/Screenshots/fva3_th.png)](https://raw.githubusercontent.com/thegameg/FVCustomAlertView/master/Screenshots/fva3.png)
 ```objective-c
-[FVCustomAlertView showDefaultErrorAlertOnView:self.view withTitle:@"Error" withBlur:YES];
+[FVCustomAlertView showDefaultErrorAlertOnView:self.view withTitle:@"Error" withBlur:YES allowTap:YES];
 ```
 
 * Warning
 
 [![](https://raw.githubusercontent.com/thegameg/FVCustomAlertView/master/Screenshots/fva4_th.png)](https://raw.githubusercontent.com/thegameg/FVCustomAlertView/master/Screenshots/fva4.png)
 ```objective-c
-[FVCustomAlertView showDefaultWarningAlertOnView:self.view withTitle:@"Be careful" withBlur:YES];
+[FVCustomAlertView showDefaultWarningAlertOnView:self.view withTitle:@"Be careful" withBlur:YES allowTap:YES];
 ```
 
 * Custom
@@ -79,7 +79,7 @@ The default modes are : (make sure you try them in the example app)
 [![](https://raw.githubusercontent.com/thegameg/FVCustomAlertView/master/Screenshots/fva6_th.png)](https://raw.githubusercontent.com/thegameg/FVCustomAlertView/master/Screenshots/fva6.png)
 ```objective-c
 UIView *sw = [[UISwitch alloc] init];
-[FVCustomAlertView showAlertOnView:self.view withTitle:@"Do you want to recieve notifications from us?"titleColor:[UIColor whiteColor] width:120 height:140 blur:YES backgroundImage:nil backgroundColor:[UIColor blackColor] cornerRadius:20 shadowAlpha:0.2 alpha:0.8 contentView:sw type:FVAlertTypeCustom];
+[FVCustomAlertView showAlertOnView:self.view withTitle:@"Do you want to recieve notifications from us?"titleColor:[UIColor whiteColor] width:120 height:140 blur:YES backgroundImage:nil backgroundColor:[UIColor blackColor] cornerRadius:20 shadowAlpha:0.2 alpha:0.8 contentView:sw type:FVAlertTypeCustom allowTap:YES];
 ```
 
 #### v.0.2
