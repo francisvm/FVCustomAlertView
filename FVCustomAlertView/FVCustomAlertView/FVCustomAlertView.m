@@ -206,7 +206,9 @@ static UIView *currentView = nil;
     NSMutableArray *array = [NSMutableArray array];
     //iterate through all the images and add it to the array for the animation
     for (int i = 1; i <= 20; i++) {
-        UIImage *image = [UIImage imageNamed:[NSString stringWithFormat:@"%d",i]];
+        // Use imageWithContentsOfFile to avoid useless caching and memory usage
+        NSString *file = [[NSBundle mainBundle] pathForResource:[NSString stringWithFormat:@"%d",i] ofType:@"png"];
+        UIImage *image = [UIImage imageWithContentsOfFile:file];
         [array addObject:image];
     }
     return array;
@@ -214,6 +216,7 @@ static UIView *currentView = nil;
 
 + (UIView *)contentViewFromType:(FVAlertType)type {
     UIImageView *content = [[UIImageView alloc] init];
+    NSString *file = @"";
     //generate default content views based on the type of the alert
     switch (type) {
         case FVAlertTypeLoading:
@@ -227,19 +230,19 @@ static UIView *currentView = nil;
         case FVAlertTypeDone:
         {
             content.frame = CGRectMake(0, kInsetValue, kOtherIconsSize, kOtherIconsSize);
-            content.image = [UIImage imageNamed:@"checkmark"];
+            file = [[NSBundle mainBundle] pathForResource:@"checkmark" ofType:@"png"];
         }
             break;
         case FVAlertTypeError:
         {
             content.frame = CGRectMake(0, kInsetValue, kOtherIconsSize, kOtherIconsSize);
-            content.image = [UIImage imageNamed:@"cross"];
+            file = [[NSBundle mainBundle] pathForResource:@"cross" ofType:@"png"];
         }
             break;
         case FVAlertTypeWarning:
         {
             content.frame = CGRectMake(0, kInsetValue, kOtherIconsSize, kOtherIconsSize);
-            content.image = [UIImage imageNamed:@"warning"];
+            file = [[NSBundle mainBundle] pathForResource:@"warning" ofType:@"png"];
         }
             break;
         default:
@@ -247,6 +250,7 @@ static UIView *currentView = nil;
             break;
     }
 
+    content.image = [UIImage imageWithContentsOfFile:file];
     return content;
 }
 
