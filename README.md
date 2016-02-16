@@ -29,7 +29,7 @@ it, simply add the following line to your Podfile:
     pod "FVCustomAlertView"
 
 ### Use FVCustomAlertView as a static library
-Drag the .xcodeproj file into your XCode project and add it as a Target in your Build Phases. Don't forget to add libFVCustomAlertView.a in Link Binary With Library and set the -ObjC flag in Other Linker Flags.
+Drag the .xcodeproj file into your Xcode project and add it as a Target in your Build Phases. Don't forget to add libFVCustomAlertView.a in Link Binary With Library and set the -ObjC flag in Other Linker Flags.
 
 ### Manually add the files to your project
 
